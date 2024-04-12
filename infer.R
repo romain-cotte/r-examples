@@ -1,3 +1,13 @@
+# ==============================================================================
+# From the Iris dataset, the purpose is infer the category of iris from
+# a list of values, we'll keep the nearest corresponding value.
+# For example if the data contains
+# 5.1,Iris-setosa
+# 10.2,Iris-versicolor
+# and we want to know for the length 7, it will correspond to Iris-setosa as
+# abs(7-5.1) < abs(7-10.2)
+# ==============================================================================
+
 ref_sepal_length <- read.csv("./data/iris_lightweight.csv")
 print(ref_sepal_length)
 

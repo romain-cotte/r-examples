@@ -3,10 +3,9 @@ if(!require('stats')) {
   library('stats')
 }
 
-##-- Simple didactical  ecdf  example :
+##-- Simple didactical ecdf example:
 x <- rnorm(12)
 plot(x)
-
 
 Fn <- ecdf(x)
 plot(Fn)
