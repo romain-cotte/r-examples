@@ -23,6 +23,7 @@ infer_iris <- function(ref_sepal_length, to_infer) {
       df[nrow(df) + 1,] <- list(val, ref_sepal_length[i,"target"])
     }
   }
+  # df$target <- factor(df$target)
   return (df)
 }
 
@@ -31,7 +32,8 @@ to_infer <- data.frame("sepal length (cm)" = c(4.1, 4.8, 6.6))
 result_df <- infer_iris(ref_sepal_length, to_infer)
 expected_inference <- data.frame(
     "sepal length (cm)" = c(4.1, 4.8, 6.6),
-    "target" = c("Iris-setosa", "Iris-setosa", "Iris-virginica")
+    "target" = c("Iris-setosa", "Iris-setosa", "Iris-virginica"),
+    stringsAsFactors=TRUE
 )
 
 result_df

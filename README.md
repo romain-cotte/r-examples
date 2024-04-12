@@ -1,6 +1,6 @@
 # R language
 
-# Prerequisistes
+## Prerequisistes
 
 ```sh
 sudo apt-get install libcurl4-openssl-dev libssl-dev
@@ -13,7 +13,7 @@ Execute file:
 Rscript file.R
 ```
 
-# Install devtools
+## Install devtools
 
 Not working, just install r-cran-devtools and it will be fine.
 ```R
@@ -21,14 +21,14 @@ install.packages("devtools", dependencies = TRUE)
 ```
 
 
-# DownscaleR
+## DownscaleR
 
 ```R
 devtools::install_github(c("SantanderMetGroup/transformeR", "SantanderMetGroup/downscaleR"))
 ```
 
 
-# Downscaler CDFt
+## Downscaler CDFt
 
 https://cran.r-project.org/web/packages/CDFt/CDFt.pdf
 

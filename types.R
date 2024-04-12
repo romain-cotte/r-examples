@@ -8,6 +8,7 @@ y
 
 # Print the class name of x and y
 class(x)
+typeof(x)
 
 # Type "complex"
 x <- 3+5i
