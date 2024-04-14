@@ -55,3 +55,9 @@ df |> subset(subset=x == 1)
 df |> subset(x == 1)
 
 df |> subset(x == 2 & weight < mean(weight))
+
+
+df[df == 1, ]
+df |> subset(subset=x == 1)
+df |> subset(x == 1)
+df |> subset(x == 2 & weight < mean(weight))
