@@ -1,0 +1,13 @@
+Package: r-examples
+Title: R examples
+Version: 0.0.0.1
+Authors@R:
+    person("Romain", "Cotte", , "romain.cotte@gmail.com", role = c("aut", "cre"),
+           comment = c(ORCID = "YOUR-ORCID-ID"))
+Description: Some R examples.
+License: use_mit_license()
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.1
+Imports:
+    testthat
