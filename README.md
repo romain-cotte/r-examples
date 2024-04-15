@@ -32,3 +32,13 @@ devtools::install_github(c("SantanderMetGroup/transformeR", "SantanderMetGroup/d
 
 https://cran.r-project.org/web/packages/CDFt/CDFt.pdf
 
+
+## Code coverage
+
+```R
+covr::codecov(
+  quiet = FALSE,
+  clean = FALSE,
+  install_path = file.path("/tmp/r", winslash = "/"), "package")
+)
+```
