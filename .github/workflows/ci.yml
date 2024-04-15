@@ -21,12 +21,7 @@ jobs:
         with:
           use-public-rspm: true
 
-      - uses: r-lib/actions/setup-r-dependencies@v2
-        with:
-          extra-packages: any::covr
-          needs: coverage
       - name: Test
         run: |
-          R -e 'install.packages(c("test_dir", "testthat"))'
-          R -e 'test_dir("tests/testthat")'
-        shell: Rscript {0}
+          R -e 'install.packages(c("testthat"))'
+          Rscript tests/testthat/test-name.R
