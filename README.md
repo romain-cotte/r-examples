@@ -20,6 +20,15 @@ Not working, just install r-cran-devtools and it will be fine.
 install.packages("devtools", dependencies = TRUE)
 ```
 
+## Install ggbio
+
+```R
+if (!requireNamespace("BiocManager", quietly = TRUE))
+    install.packages("BiocManager")
+
+BiocManager::install("ggbio")
+```
+
 
 ## DownscaleR
 
